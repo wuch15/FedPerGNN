@@ -1,0 +1,2 @@
+# FedGNN
+code of FedGNN
