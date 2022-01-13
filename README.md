@@ -1,5 +1,4 @@
-# FedGNN
-code of FedGNN
+# FedGNN 
 
 1. Environment Requirements
 * Ubuntu 16.04
