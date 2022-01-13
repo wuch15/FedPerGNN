@@ -15,6 +15,7 @@ Needs a Linux server with larger than 32GB memory. GPU cores are optional but re
 3. Running
 
 * Download datasets from their original sources
+* Convert then into matlab matrix formats (rows: users, columns: items, value: ratings)
 * Execute "python run.py"
 
 Note: The logs will show the training loss and the test results. The estimated running time is from tens of minutes to hours, depending on the dataset size.
