@@ -26,10 +26,10 @@ def generate_training_data(Otraining,M):
         user_index=[]
         for j in range(len(Otraining[i])):
             if Otraining[i][j]!=0:
+                user_index.append(len(trainu))
                 trainu.append(i)
                 traini.append(j)
                 trainlabel.append(M[i][j]/LABEL_SCALE)
-                user_index.append(j)
         if len(user_index):
             train_user_index[i]=user_index
             
