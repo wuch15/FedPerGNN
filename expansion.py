@@ -54,7 +54,7 @@ def graph_embedding_expansion(Otraining,usernei,alluserembs):
                 neighbor_embs += [[0.]*HIDDEN]*(NEIGHBOR_LEN-len(neighbor_embs))
             else:
                 neighbor_embs = [[0.]*HIDDEN]*NEIGHBOR_LEN
-        all_neighbor_embs.append(neighbor_embs)
+            all_neighbor_embs.append(neighbor_embs)
         all_neighbor_embs = all_neighbor_embs[:HIS_LEN]
         all_neighbor_embs += [[[0.]*HIDDEN]*HIS_LEN]*(HIS_LEN-len(all_neighbor_embs))
         user_neighbor_emb.append(all_neighbor_embs)
