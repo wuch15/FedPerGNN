@@ -16,7 +16,7 @@ def generate_batch_data_random(batch_size,train_user_index,trainu,traini,history
                 uid=np.concatenate([uid,trainu[idss]])
                 iid=np.concatenate([iid,traini[idss]])
                 y=np.concatenate([y,trainlabel[idss]])
-                uneiemb=np.concatenate([uneiemb,user_neighbor_emb[idss]],axis=0)
+                uneiemb=np.concatenate([uneiemb,user_neighbor_emb[trainu[idss]]],axis=0)
             uid=np.array(uid,dtype='int32')
             iid=np.array(iid,dtype='int32')
             ui=history[uid]
